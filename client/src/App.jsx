@@ -7,6 +7,8 @@ import Dashboard from './pages/Dashboard'
 import About from './pages/About'
 import Projects from './pages/Projects'
 import Header from './components/Header'
+import { Footer } from 'flowbite-react'
+import FooterCom from './components/Footer'
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
       <Route path='/projects' element={<Projects></Projects>}></Route>
 
      </Routes>
+     <FooterCom></FooterCom>
      </BrowserRouter>
   
 </>  )
