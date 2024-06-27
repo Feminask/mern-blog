@@ -12,7 +12,7 @@ mongoose.connect(process.env.MONGO).then(
 })
 
 const app =express();
-const PORT=8007
+const PORT=4000
 app.listen(PORT,()=>{
     console.log(`Server is running on ${PORT}... `);
 })
