@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { signInFailure, signInstart, signInsuccess } from "../redux/user/userSlice";
 import { useDispatch, useSelector } from "react-redux";
+import OAuth from "../components/OAuth";
 
 function SignIn() {
   const [formData, setFormData] = useState({});
@@ -84,6 +85,7 @@ Log in to continue sharing your stories and connecting with our community. At Bl
   <span className="pl-3">Signing In...</span>
   
 </>) : 'Sign In'}            </Button>
+<OAuth></OAuth>
           </form>
           <div className="flex gap-2 tex-sm mt-5">
             <span>Dont Have an account?</span>
