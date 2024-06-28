@@ -9,6 +9,7 @@ import Projects from './pages/Projects'
 import Header from './components/Header'
 import { Footer } from 'flowbite-react'
 import FooterCom from './components/Footer'
+import PrivateRoute from './components/PrivateRoute'
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
       <Route path='/about' element={<About></About>}></Route>
       <Route path='/sign-in' element={<SignIn></SignIn>}></Route>
       <Route path='/sign-up' element={<SignUp></SignUp>}></Route>
-      <Route path='/dashboard' element={<Dashboard></Dashboard>}></Route>
+      <Route element={<PrivateRoute></PrivateRoute>}>      <Route path='/dashboard' element={<Dashboard></Dashboard>}></Route>
+      </Route>
       <Route path='/projects' element={<Projects></Projects>}></Route>
 
      </Routes>
