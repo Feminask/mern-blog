@@ -18,10 +18,10 @@ useEffect(()=>{
 <Sidebar.Items>
 <Sidebar.ItemGroup>
 <Link to='/dashboard?tab=profile'>
-               <Sidebar.Item active={tab==='profile'} icon={HiUser} label={'User'}labelColor='dark'>    Profile
+               <Sidebar.Item active={tab==='profile'} icon={HiUser} label={'User'}labelColor='dark' as='div'>    Profile
                </Sidebar.Item>
     
-</Link>           <Sidebar.Item classname='cursor pointer'  icon={HiArrowSmRight} 
+</Link>           <Sidebar.Item className='cursor pointer'  icon={HiArrowSmRight} 
             >    SignOut
            </Sidebar.Item>
 
