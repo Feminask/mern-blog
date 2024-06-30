@@ -21,6 +21,9 @@ useEffect(()=>{
 </div> 
 {/* profile */}
 {tab==='profile' && <DashProfile></DashProfile>}
+
+{/* posts */}
+{tab === 'posts' && <DashPosts />}
    </div>
   )
 }
